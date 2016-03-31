@@ -40,4 +40,21 @@ document.addEventListener("DOMContentLoaded", function() { // Makes sure the doc
                 .getElementById("score")
                 .innerHTML = increasedScore;
     });
+
+    var decreaseButton;
+    decreaseButton = document
+        .getElementById("decrease-point")
+        .addEventListener("click", function() {
+            if (score <= 0) {
+                // Do Nothing.
+            } else {
+                score = (score - 1);
+                decreasedScore = score.toString();
+                console.log(decreasedScore);
+                console.log(typeof(decreasedScore));
+                document
+                    .getElementById("score")
+                    .innerHTML = decreasedScore;
+            }
+    });
 });
