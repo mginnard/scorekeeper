@@ -1,6 +1,6 @@
 #### Scorekeeper
 
-A simple vanilla JS application for keeping track of a score in +/- 1 point intervals.
+A simple vanilla JS application for keeping track of a score in +/- 1 point intervals. Found a bug? [Open an issue](https://github.com/mginnard/scorekeeper/issues)!
 
 ![Scorekeeper Screenshot](https://raw.githubusercontent.com/mginnard/scorekeeper/master/static/img/scorekeeper.gif)
 
