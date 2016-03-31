@@ -63,11 +63,14 @@ body {
   letter-spacing: .1rem; }
 
 .card-button-group {
-  padding: 1rem 1rem 2rem; }
+  padding: 1rem; }
   @media screen and (min-width: 32rem) {
     .card-button-group {
       display: flex;
       justify-content: space-between; } }
+  @media screen and (min-width: 32rem) {
+    .card-button-group {
+      padding: 1rem 1rem 2rem; } }
 
 button {
   width: 100%;
