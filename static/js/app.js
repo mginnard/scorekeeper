@@ -20,5 +20,24 @@ document.addEventListener("DOMContentLoaded", function() { // Makes sure the doc
     //     });
     // }
 
-    
+    var data;
+    data = document
+        .getElementById("score")
+        .innerHTML;
+    score = parseInt(data);
+    console.log(score);
+    console.log(typeof(score));
+
+    var increaseButton;
+    increaseButton = document
+        .getElementById("increase-point")
+        .addEventListener("click", function() {
+            score = (score + 1);
+            increasedScore = score.toString();
+            // console.log(increasedScore);
+            // console.log(typeof(increasedScore));
+            document
+                .getElementById("score")
+                .innerHTML = increasedScore;
+    });
 });
