@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Scorekeeper</title>
     <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Open+Sans:400,300italic,300,400italic,600,600italic,700,700italic' type='text/css' />
     <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" type="text/css" />
@@ -10,7 +11,7 @@
   </head>
   <body>
     <section class="container">
-      <a class="link-github" href="https://github.com/mginnard/scorekeeper" title="View Source on Github"><span class="icon ion-social-github"></span> View Source on GitHub</a>
+      <a class="link-github" href="https://github.com/mginnard/scorekeeper" title="View Source on Github"><span class="icon ion-social-github"></span> View Source</a>
       <article class="card">
         <div class="card-display">
           <div class="card-title">Scorekeeper</div>
@@ -23,7 +24,9 @@
         </div>
         <div class="card-footer">
           <input id="custom-score-input" type="number" min="0" placeholder="Set a custom score..." />
-          <button class="button-score" id="custom-score-button">Submit</button>
+          <div class="button-score-wrapper">
+            <button class="button-score" id="custom-score-button">Submit</button>
+          </div>
         </div>
       </article>
     </section>
