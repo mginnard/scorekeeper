@@ -1,12 +1,13 @@
 document.addEventListener("DOMContentLoaded", function() { // Makes sure the document has completed loading before executing anything wrapped inside.
 
-    var data;
-    data = document
-        .getElementById("score")
-        .innerHTML;
-    score = parseInt(data); // Turn the string into an int for computation.
-    // console.log(score);
-    // console.log(typeof(score));
+    // Generic function that gets the current score on demand.
+    var getScore = function() {
+        var data;
+        data = document
+            .getElementById("score")
+            .innerHTML;
+        return score = parseInt(data); // Turn the string into an int for computation.
+    }
 
     // Generic function that changes the display
     // with whatever the new score is.
@@ -22,6 +23,7 @@ document.addEventListener("DOMContentLoaded", function() { // Makes sure the doc
     increaseButton = document
         .getElementById("increase-point")
         .addEventListener("click", function() {
+            getScore();
             score = (score + 1); // Add a point to score.
             newScore = score.toString(); // Convert score back to a string, and give it the newScore name.
             // console.log(newScore); // Debug logging, checking the value of newScore.
@@ -34,6 +36,7 @@ document.addEventListener("DOMContentLoaded", function() { // Makes sure the doc
     decreaseButton = document
         .getElementById("decrease-point")
         .addEventListener("click", function() {
+            getScore();
             if (score <= 0) {
                 // Checks whether the score is at zero. If it is, do nothing.
             } else {
@@ -47,6 +50,7 @@ document.addEventListener("DOMContentLoaded", function() { // Makes sure the doc
     submitScoreButton = document
         .getElementById("custom-score-button")
         .addEventListener("click", function() {
+            getScore();
             inputString = document
                 .getElementById("custom-score-input")
                 .value;
