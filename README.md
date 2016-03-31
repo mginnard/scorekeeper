@@ -1,6 +1,10 @@
-# Score Keeper
-- We will be creating a simple score keeper application using JavaScript.
-- The HTML and CSS has already been done for you.
+#### Scorekeeper
+
+A simple vanilla JS application for keeping track of a score in 5 point intervals.
+
+##### Assignment
+
+- Create a simple score keeping application using JavaScript.
 - Here are the steps you should take:
 	- Step 1: Add a link to your own custom JS file.
 	- Step 2: Bind click events to the +5 and -5 point buttons and change the innerHTML of the score display appropriately.
