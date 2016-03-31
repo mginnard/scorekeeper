@@ -46,6 +46,7 @@ document.addEventListener("DOMContentLoaded", function() { // Makes sure the doc
             }
     });
 
+    // When the 
     var inputString, submitScoreButton;
     submitScoreButton = document
         .getElementById("custom-score-button")
@@ -54,13 +55,13 @@ document.addEventListener("DOMContentLoaded", function() { // Makes sure the doc
             inputString = document
                 .getElementById("custom-score-input")
                 .value;
-                inputNumber = parseInt(inputString);
-                if (inputNumber < 0) {
-                    inputNumber = 0;
-                } else {
-                    // Do Nothing
+                if (inputString.length !== 0) {
+                    inputNumber = parseInt(inputString);
+                    if (inputNumber < 0) {
+                        inputNumber = 0;
+                    }
+                    newScore = inputNumber.toString();
+                    updateScore(newScore);
                 }
-                newScore = inputNumber.toString();
-                updateScore(newScore);
         })
 });
