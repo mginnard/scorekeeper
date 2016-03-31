@@ -2,29 +2,26 @@
 <html>
   <head>
     <title>Scorekeeper</title>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300italic,300,400italic,600,600italic,700,700italic' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="static/css/site.css" />
 
     <script src="static/js/app.js"></script>
   </head>
   <body>
-
-    <div class="container">
-      <div id="score">
-        0 Points
-      </div>
-      <div class="margin-top-20">
-        <button class="button-1" id="increase-5">+5 Points</button>
-      </div>
-      <div class="margin-top-20">
-        <button class="button-1" id="decrease-5">-5 Points</button>
-      </div>
-      <div class="margin-top-20">
-        <input id="custom-score" type="text" placeholder="Set a custom score" />
-      </div>
-      <div class="margin-top-20">
-        <button id="submit-custom-score" class="button-2">Set Score</button>
-      </div>
-    </div>
-
+    <section class="container">
+      <article class="card">
+        <div class="card-display">
+          <div class="card-title">Scorekeeper</div><div class="card-display-count" id="score">0</div><div class="card-display-label">Points</div>
+        </div>
+        <div class="card-button-group">
+          <button class="button-increase" id="increase-point">+1 Points</button>
+          <button class="button-decrease" id="decrease-point">-1 Points</button>
+        </div>
+        <div class="card-footer">
+          <input id="custom-score" type="number" min="0" placeholder="Set a custom score..." />
+          <button class="button-score" id="submit-custom-score">Submit</button>
+        </div>
+      </article>
+    </section>
   </body>
 </html>
