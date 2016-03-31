@@ -6,13 +6,31 @@ html {
   padding: 0;
   font-weight: 400;
   line-height: 1.5;
-  font-size: 15px; }
+  font-size: 16px; }
 
 body {
   font-family: "Source Sans Pro", sans-serif;
   text-rendering: optimizeLegibility;
   font-kerning: normal;
-  margin: 4rem 2rem; }
+  margin: 6rem 2rem; }
+
+.link-github {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  text-decoration: none;
+  color: #0074D9;
+  font-size: .9rem; }
+  .link-github:hover {
+    color: #0059a6; }
+    .link-github:hover .icon {
+      color: #0074D9; }
+  .link-github .icon {
+    position: relative;
+    top: .2rem;
+    color: #a9b6bd;
+    font-size: 1.4rem;
+    margin-right: .2rem; }
 
 .card {
   background-color: #FFFFFF;
