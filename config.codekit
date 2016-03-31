@@ -41,17 +41,6 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
-	"\/static\/img\/puppies.jpg": {
-		"fileType": 16384,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 228012,
-		"inputAbbreviatedPath": "\/static\/img\/puppies.jpg",
-		"outputAbbreviatedPath": "\/static\/img\/puppies.jpg",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
 	"\/static\/scss\/modules\/_variables.scss": {
 		"createSourceMap": 0,
 		"debugStyle": 0,
