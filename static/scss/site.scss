@@ -28,6 +28,7 @@ body {
   text-decoration: none;
   color: $blue;
   font-size: .9rem;
+  transition: all 200ms ease;
   &:hover {
     color: darken($blue, 10%);
     .icon {
@@ -40,6 +41,7 @@ body {
     color: $gray-label;
     font-size: 1.4rem;
     margin-right: .2rem;   
+    transition: all 200ms ease;
   }
   
 }
