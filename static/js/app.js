@@ -26,8 +26,6 @@ document.addEventListener("DOMContentLoaded", function() { // Makes sure the doc
             getScore();
             score = (score + 1); // Add a point to score.
             newScore = score.toString(); // Convert score back to a string, and give it the newScore name.
-            // console.log(newScore); // Debug logging, checking the value of newScore.
-            // console.log(typeof(newScore)); // Debug logging, checking whether newScore is a string or int.
             updateScore(newScore); // Call updateScore with the new score, so it's displayed.
     });
 
