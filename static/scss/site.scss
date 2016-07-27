@@ -1,0 +1,213 @@
+// Import Variables
+@import 'modules/_variables';
+
+// Reset every element with "box-sizing: border-box;" for widths
+// given to elements that include padding and borders.
+* {
+  box-sizing: border-box;
+}
+
+// Base CSS
+
+html {
+  font-size: 14px;
+  line-height: 1.5;
+  margin: 0;
+  padding: 0;
+  @media screen and (min-width: 32rem) { 
+    font-size: 16px;
+  }
+}
+
+body {
+  font-family: $font-family-sans;
+  font-weight: 400;
+  font-kerning: normal;
+  text-rendering: optimizeLegibility;
+  background-color: $body-bg;
+  margin: 2rem;
+  // Embedded media queries to target specific properties.
+  @media screen and (min-width: 32rem) { 
+    margin: 4rem 2rem;
+  }
+}
+
+p {
+  margin-top: 0;
+}
+
+a {
+  color: $blue;
+  &:hover,
+  &:active {
+    color: darken($blue,8%);
+  }
+}
+
+button {
+  font-size: .7rem;
+  text-transform: uppercase;
+  letter-spacing: .1rem;
+  cursor: pointer;
+  border: none;
+  padding: .8rem 2rem;
+  color: $white;
+  border-radius: 4px;
+  transition: all 80ms ease-in-out;
+  &:hover {
+    transform: scale(1.1);
+  }
+  &:focus {
+    outline: 0;
+  }
+}
+
+input[type="text"],
+input[type="number"] {
+  font-size: 16px;
+  width: 100%;
+  padding: .6rem .6rem .64rem;
+  border: 1px solid $silver;
+  border-radius: 4px;
+  box-shadow: inset 0px 0px 10px -6px rgba($black,.75);
+  &:focus {
+    outline: 0;
+    box-shadow: 0px 0px 10px 1px rgba($blue,.2);
+    border-color: lighten($blue,20%);
+  }
+}
+
+// Helper classes
+
+.icon-green {
+  color: $green;
+}
+
+.icon-red {
+  color: $red;
+}
+
+// Improved  style of input placeholder text.
+::-webkit-input-placeholder,
+:-moz-placeholder,
+::-moz-placeholder,
+:-ms-input-placeholder {
+  font-style: italic;
+  color: rgba($gray-label,.6);
+}
+
+.card {
+  max-width: 24rem;
+  margin: 0 auto;
+  border-radius: .3rem;
+  background-color: $white;
+  box-shadow: 0 40px 84px 0 rgba(0, 0, 0, 0.8);
+}
+
+.card-display { // Namespace: The top of the card...title, displayed score, and "points" label.
+  padding: 2rem 1rem 0;
+  text-align: center;
+
+  .title {
+    color: $gray-label;
+    text-transform: uppercase;
+    letter-spacing: .2rem;
+    margin-bottom: 2rem;
+  }
+  
+  .count {
+    font-weight: 200;
+    font-size: 6rem;
+    line-height: 6rem;
+  }
+
+  .count-label {
+    color: $gray-label;
+    font-size: .8rem;
+    text-transform: uppercase;
+    letter-spacing: .2rem;
+    margin-bottom: .4rem;
+  }
+}
+
+.card-increment-buttons { // Namespace: The incremental +/- buttons and flex wrapper.
+  display: flex;
+  justify-content: space-around;
+  padding: 0 2rem 1rem;
+  
+  @media screen and (min-width: 32rem) {
+    padding: 0 2rem 2rem;
+  }
+
+  .button {
+    font-size: 4rem;
+    cursor: pointer;
+    transition: all 80ms ease-in-out;
+    &:hover,
+    &:focus {
+      transform: scale(1.1);
+    }
+    &:active {
+      transform: scale(1);
+    }
+  }
+}
+
+.card-footer { // Namespace: The "submit score" form in the card footer.
+  border-top: 1px solid lighten($silver,10%);
+  padding: 1rem 2rem 2rem;
+
+  .form-label { // Label above the input.
+    // TODO(matthew): Combine this into a single class that can be used with the
+    //                .count-label class as well.
+    color: $gray-label;
+    font-size: .8rem;
+    text-transform: uppercase;
+    letter-spacing: .2rem;
+    margin-bottom: .4rem;
+  }
+
+  .form-row { // Flex wrapper.
+    @media screen and (min-width: 32rem) {
+      display: flex; // Push input and button onto the same line when above 32rem widths.
+    }
+
+    .button {
+      background-color: $blue;
+      margin-top: 1rem;
+      @media screen and (min-width: 32rem) {
+        margin-left: 1rem;
+        margin-top: 0;
+      }
+    }
+  }
+}
+
+.project-meta { // Namespace - Additional project-related metadata: links, etc.
+  text-align: center;
+  margin: 2rem 2rem 0;
+
+  a {
+    font-size: .8rem;
+    padding: .4rem .8rem;
+    border-radius: .3rem;
+    background-color: rgba($white,.2);
+    text-decoration: none;
+    color: rgba($white,.6);
+    
+    &:hover {
+      color: $white;
+      .icon {
+        color: $white;
+      }
+    }
+
+    .icon {
+      position: relative;
+      top: .1rem;
+      color: rgba($white,.6);
+      font-size: 1.1rem;
+      margin-right: .4rem;   
+    }
+  }
+}

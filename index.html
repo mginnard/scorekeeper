@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Scorekeeper</title>
+    <link href="https://fonts.googleapis.com/css?family=Poppins:400,300,500,600,700" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" type="text/css" />
+    <link rel="stylesheet" href="static/css/site.css" type="text/css" />
+
+    <script src="static/js/app.js"></script>
+  </head>
+  <body>
+    <section class="container">
+      <article class="card">
+        <div class="card-display">
+          <div class="title">Scorekeeper</div>
+          <div class="count" id="score">0</div>
+          <div class="count-label">Points</div>
+        </div>
+        <div class="card-increment-buttons">
+          <span id="increase-point" class="button icon-green ion-plus-circled"></span>
+          <span id="decrease-point" class="button icon-red ion-minus-circled"></span>
+        </div>
+        <div class="card-footer">
+          <div class="form">
+            <p class="form-label">Enter a score</p>  
+            <div class="form-row">
+              <input id="custom-score-input" type="number" min="0" placeholder="Ex: 429" />
+              <button class="button" id="custom-score-button">Submit</button>
+            </div>
+          </div>
+        </div>
+      </article>
+      <p class="project-meta">
+        <a href="https://github.com/mginnard/scorekeeper" title="View Source on Github">
+          <span class="icon ion-social-github"></span> View Source
+        </a>
+      </p>
+    </section>
+  </body>
+</html>
