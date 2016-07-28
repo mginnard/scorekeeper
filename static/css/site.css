@@ -115,7 +115,7 @@ input[type="number"] {
 
 .card-footer {
   border-top: 1px solid #f7f7f7;
-  padding: 1rem 2rem 2rem; }
+  padding: 1rem 2rem 1rem; }
   .card-footer .form-label {
     color: #a9b6bd;
     font-size: .8rem;
@@ -125,13 +125,27 @@ input[type="number"] {
   @media screen and (min-width: 32rem) {
     .card-footer .form-row {
       display: flex; } }
-  .card-footer .form-row .button {
+  .card-footer .button {
     background-color: #00AEEF;
     margin-top: 1rem; }
     @media screen and (min-width: 32rem) {
-      .card-footer .form-row .button {
+      .card-footer .button {
         margin-left: 1rem;
         margin-top: 0; } }
+
+.card-controls {
+  border-top: 1px solid #f7f7f7;
+  font-size: .8rem;
+  padding: 1rem 2rem 1rem; }
+  .card-controls .button {
+    background-color: #00AEEF;
+    opacity: .2;
+    margin: 0;
+    border: none;
+    padding: .4rem 1rem;
+    font-size: .6rem; }
+    .card-controls .button:hover {
+      opacity: 1; }
 
 .project-meta {
   text-align: center;
